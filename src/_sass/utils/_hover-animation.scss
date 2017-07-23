@@ -1,0 +1,8 @@
+@mixin hover-animation {
+  @include prefix(transition, 250ms ease, webkit moz o);
+
+  -o-transition-property: background, border-color, color;
+  -moz-transition-property: background, border-color, color;
+  -webkit-transition-property: background, border-color, color;
+  transition-property: background, border-color, color;
+}

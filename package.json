@@ -1,0 +1,25 @@
+{
+  "name": "faithful-friends-kennels",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Dan Webb",
+  "scripts": {
+    "serve": "concurrently \"webpack --watch\" \"cd src && bundle exec jekyll serve\""
+  },
+  "dependencies": {
+    "jquery": "3.2.1",
+    "owl.carousel": "2.2.0",
+    "pikaday": "1.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.24.0",
+    "babel-loader": "6.4.1",
+    "babel-preset-env": "1.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "concurrently": "3.5.0",
+    "eslint": "4.1.0",
+    "uglifyjs-webpack-plugin": "0.3.1",
+    "webpack": "2.3.1",
+    "xo": "0.18.2"
+  }
+}

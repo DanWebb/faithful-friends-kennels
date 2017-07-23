@@ -1,0 +1,157 @@
+.banner {
+  @include prefix(background-size, cover, webkit moz o);
+  background-position: right top;
+  background-repeat: no-repeat;
+  color: $white;
+  height: calc(100vh - 198px);
+  position: relative;
+  width: 100%;
+
+  &::after {
+    background: $overlay;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  &.banner--small {
+    background-position: center;
+    height: 150px;
+
+    &::after {
+      background: $green;
+      opacity: .6;
+    }
+  }
+
+	&.banner--medium {
+		background-position: center;
+		height: calc(87vh - 198px);
+
+		&::after {
+			opacity: .5;
+		}
+	}
+}
+
+.banner__content-container {
+  height: 100%;
+  position: relative;
+}
+
+.banner__content {
+  bottom: 10%;
+  position: absolute;
+  z-index: 1;
+
+  h1,
+  h2,
+  h3 {
+    color: $white;
+    text-shadow: 1px 1px 1px rgba(68, 68, 68, 0.7);
+  }
+
+  h1,
+  h2 {
+    font-weight: $font-b;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 29px;
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: $font-l;
+  }
+}
+
+.banner__actions {
+  .banner__action {
+    width: 60%;
+  }
+
+  .banner__action:first-child {
+    margin-bottom: 10px;
+  }
+
+  .or {
+    display: none;
+  }
+}
+
+@include breakpoint(s) {
+  .banner__content {
+    left: 0;
+  }
+
+  .banner__actions {
+    .banner__action {
+      width: auto;
+    }
+
+    .banner__action:first-child {
+      margin-bottom: 0;
+    }
+
+    .or {
+      display: inline-block;
+    }
+  }
+}
+
+@include breakpoint(m) {
+  .banner {
+    height: calc(100vh - 140px);
+
+    &.banner--small {
+      height: 250px;
+    }
+  }
+
+  .banner__content {
+    bottom: 20%;
+
+    h1 {
+      font-size: 50px;
+      line-height: 45px;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 25px;
+      font-weight: $font-l;
+    }
+  }
+
+  .banner__actions {
+    font-size: 16px;
+
+    .banner__action {
+      width: auto;
+    }
+
+    .banner__action:first-child {
+      margin-bottom: 0;
+    }
+
+    .or {
+      display: inline-block;
+    }
+  }
+}

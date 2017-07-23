@@ -1,0 +1,73 @@
+.booking-form {
+	margin-top: 30px;
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		background: $white;
+		border: 1px solid $light-grey;
+		border-radius: 3px;
+		color: $black;
+		font-size: 16px;
+		line-height: 1.1;
+		padding: 0 15px;
+    height: 45px;
+    font-weight: $font-m;
+    transition: border .4s, color .4s;
+
+		&:hover,
+		&:focus {
+			border-color: $green;
+		}
+
+		@include placeholder {
+			color: $grey;
+			font-weight: $font-l;
+		}
+	}
+
+	textarea {
+		padding: 15px;
+		height: 150px;
+    line-height: 25px;
+	}
+
+	h4 {
+		margin-top: 20px;
+		padding-bottom: 10px;
+
+		span {
+			border: 3px solid $light-grey;
+			border-radius: 50%;
+			color: $light-grey;
+			display: inline-block;
+			float: right;
+			height: 30px;
+			padding: 0 8px 0 10px;
+			line-height: 31px;
+			margin-top: -7px;
+			transition: border .4s, color .4s, transform .4s;
+		}
+
+		&:hover span {
+			color: $green;
+			border-color: $green;
+		}
+	}
+
+	hr {
+		border-top: 2px solid $light-grey;
+	}
+
+	.accordion--open h4 span {
+		color: $green;
+		border-color: $green;
+		transform: rotate(90deg);
+	}
+
+	a.button,
+	.remove-button {
+		font-size: 12px;
+	}
+}
