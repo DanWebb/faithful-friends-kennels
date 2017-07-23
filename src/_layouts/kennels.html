@@ -8,7 +8,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="columns six">
-                <p><img src="{{ page.kennel_image | relative_url }}" alt="individual kennel" /></p>
+                <p><img src="{{ page.kennel_image }}" alt="individual kennel" /></p>
             </div>
 
             <div class="columns six">
@@ -34,7 +34,7 @@ layout: default
                 {{ page.care_section.content }}
             </div>
             <div class="columns six">
-                <img src="{{ page.care_section.image | relative_url }}" alt="individual kennel" />
+                <img src="{{ page.care_section.image }}" alt="individual kennel" />
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ layout: default
                 <h2>{{ page.final_section.header }}</h2>
                 <p>{{ page.final_section.text }}</p>
                 <p>
-                    <a href="{{ page.final_section.action.url }}" class="button button--primary button--green">
+                    <a href="{{ site.baseurl }}{{ page.final_section.action.url }}" class="button button--primary button--green">
                         {{ page.final_section.action.text }}
                     </a>
                 </p>

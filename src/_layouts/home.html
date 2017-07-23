@@ -12,13 +12,13 @@ layout: default
                 <p>{{ page.about.text }}</p>
 
                 {% if page.about.primary_action.url %}
-                    <a class="button button--primary" href="{{ page.about.primary_action.url }}">
+                    <a class="button button--primary" href="{{ site.baseurl }}{{ page.about.primary_action.url }}">
                         {{ page.about.primary_action.text }}
                     </a>
 
                     {% if page.about.secondary_action.url %}
                         <span class="or">or</span>
-                        <a href="{{ page.about.secondary_action.url }}">
+                        <a href="{{ site.baseurl }}{{ page.about.secondary_action.url }}">
                             {{ page.about.secondary_action.text }}
                         </a>
                     {% endif %}
@@ -63,7 +63,7 @@ layout: default
                 <h2>{{ page.final_section.header }}</h2>
                 <p>{{ page.final_section.text }}</p>
                 <p>
-                    <a href="{{ page.final_section.action.url }}" class="button button--primary button--green">
+                    <a href="{{ site.baseurl }}{{ page.final_section.action.url }}" class="button button--primary button--green">
                         {{ page.final_section.action.text }}
                     </a>
                 </p>
