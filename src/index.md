@@ -1,7 +1,7 @@
 ---
 layout: home
 
-cover_image: /assets/images/hero-lenny.jpg
+cover_image: assets/images/hero-lenny.jpg
 intro_header: Welcome To
 main_header: Faithful Friends Kennels
 sub_header: North Devons Favorite Dog Boarding Kennels
