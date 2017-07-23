@@ -1,0 +1,108 @@
+<form action="https://formspree.io/faithfulfriendskennels@gmail.com" method="post" class="booking-form">
+	<input type="hidden" name="_subject" value="New Kennel Booking" />
+
+	<div class="row">
+		<div class="columns six">
+			<input type="text" name="First Name" placeholder="First Name" required>
+		</div>
+		<div class="columns six">
+			<input type="text" name="Last Name" placeholder="Last Name" required>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="columns six">
+			<input type="text" name="Phone" placeholder="Phone Number" required>
+		</div>
+
+		<div class="columns six">
+			<input type="email" name="email" placeholder="Email Address" required>
+		</div>
+	</div>
+
+	<div class="row">
+		<input type="text" name="Boarding Date" id="datepicker" placeholder="Date of Boarding" required>
+	</div>
+
+	<div class="row">
+		<div class="columns six">
+			<input type="text" name="Arrival Time" placeholder="Arrival Time" required>
+		</div>
+		<div class="columns six prefix-suffix prefix-suffix--suffix">
+			<input type="text" name="Duration (Days)" placeholder="Duration of Stay" required>
+			<div class="prefix-suffix__suffix">Days</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<textarea name="Message" placeholder="Message"></textarea>
+	</div>
+
+	<div class="accordion">
+		<h4 class="accordion--toggle">
+			Optional Additional Details
+			<span><i class="fa fa-chevron-right"></i></span>
+		</h4>
+
+		<div class="accordion__content">
+			<div class="duplicate">
+				<div class="row">
+					<input type="text" name="Dog 1 Name" placeholder="Dog's Name">
+				</div>
+
+				<div class="row">
+					<div class="columns six">
+						<input type="text" name="Dog 1 Breed" placeholder="Dog's Breed">
+					</div>
+					<div class="columns six">
+						<input type="text" name="Dog 1 Sex" placeholder="Dog's Sex">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="columns six">
+						<input type="text" name="Dog 1 Vaccination Date" placeholder="Date of Vaccinations">
+					</div>
+					<div class="columns six">
+						<input type="text" name="Dog 1 Vet Name" placeholder="Name of Vets">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="columns six">
+						<input type="text" name="Dog 1 Medical Conditions" placeholder="Medical Conditions">
+					</div>
+					<div class="columns six">
+						<input type="text" name="Dog 1 Medication" placeholder="Medication">
+					</div>
+				</div>
+
+				<div class="row">
+					<textarea name="Dog 1 Dietry Requirements" placeholder="Dietry Requirements (We supply food based on the dogs diet apart from special medical diets, steak, boiled chicken or raw)"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<p>
+					<a href="#" class="button button--primary add-another">
+						<i class="fa fa-plus"></i> Add Another Dog
+					</a>
+
+					<span class="remove-button">
+						<span class="or">Or</span>
+						<a href="#" class="remove">Remove Dog</a>
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<p>
+		<small>
+			Yearly vaccinations as well as worming &amp; flea treatment must be up to date. The
+			vaccination card will be requested upon arrival.
+		</small>
+	</p>
+
+	<input type="submit" class="button button--primary button--green u-pull-right" value="Place Booking">
+</form>

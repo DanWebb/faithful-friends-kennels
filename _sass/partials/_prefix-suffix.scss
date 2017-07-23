@@ -1,0 +1,19 @@
+.prefix-suffix {
+	position: relative;
+
+	&.prefix-suffix--suffix input {
+		padding-right: 65px;
+	}
+
+	.prefix-suffix__prefix,
+	.prefix-suffix__suffix {
+		font-size: 14px;
+		color: $medium-grey;
+	}
+
+	.prefix-suffix__suffix {
+		position: absolute;
+		top: 13px;
+		right: 15px;
+	}
+}
