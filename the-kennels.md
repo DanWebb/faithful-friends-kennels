@@ -1,13 +1,13 @@
 ---
 layout: kennels
 
-cover_image: /assets/images/welcome.jpg
+cover_image: assets/images/welcome.jpg
 main_header: The Kennels
 banner_style: banner--medium
 secondary_action:
     text: Read more <i class="fa fa-chevron-down"></i>
     scroll: .main-info
-kennel_image: /assets/images/kennel.jpg
+kennel_image: assets/images/kennel.jpg
 
 care_section:
     image: /assets/images/care.jpg
