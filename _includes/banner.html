@@ -9,7 +9,7 @@
             {% if page.primary_action %}
             <div class="banner__actions">
                 <a
-                    href="{{ page.primary_action.url }}"
+                    href="{{ site.baseurl }}{{ page.primary_action.url }}"
                     class="banner__action button button--primary button--green"
                     {% if page.primary_action.scroll %}data-scrollto="{{ page.primary_action.scroll }}"{% endif %}
                 >
@@ -20,7 +20,7 @@
                 <span class="or">Or</span>
 
                 <a
-                    href="{{ page.secondary_action.url }}"
+                    href="{{ site.baseurl }}{{ page.secondary_action.url }}"
                     class="banner__action button button--white"
                     {% if page.secondary_action.scroll %}data-scrollto="{{ page.secondary_action.scroll }}"{% endif %}
                 >

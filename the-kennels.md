@@ -10,7 +10,7 @@ secondary_action:
 kennel_image: assets/images/kennel.jpg
 
 care_section:
-    image: /assets/images/care.jpg
+    image: assets/images/care.jpg
     header: Our Care
     intro: >
         We love caring for all of our guests and take pride in providing a hassle free service
