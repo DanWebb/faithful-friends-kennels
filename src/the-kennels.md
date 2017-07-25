@@ -38,7 +38,7 @@ final_section:
 
 ### Fully Equipped Facilities
 
-Each of our guests enjoy a relaxed warm stay no matter their breed, age or time of year in their own individual and spacious heated kennel. Their kennel will also include an attached outside covered run which they can move freely between during the day. We are able to provide bedding and bowls for all our guests free of charge but feel free to bring your own, sometimes this helps them get settled in.
+Each of our guests enjoy a relaxed warm stay no matter their breed, age or time of year in their own individual and spacious heated kennel. Their kennel will also include an attached outside covered run which they can move freely between during the day. We are able to provide bedding and bowls for all our guests free of charge but feel free to bring your own or maybe a toy, sometimes this helps them get settled in.
 
 ### Perfectly Located
 
