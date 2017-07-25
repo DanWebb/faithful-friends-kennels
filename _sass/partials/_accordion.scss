@@ -1,0 +1,31 @@
+.accordion {
+	border-bottom: 2px solid $light-grey;
+	margin-bottom: 40px;
+	transition: border .4s, color .4s;
+
+	.accordion__content {
+		max-height: 0;
+		transition: max-height 1s;
+		overflow-y: auto;
+
+		> div:first-child {
+			margin-top: 30px;
+		}
+	}
+
+	&:hover {
+		border-color: $green;
+	}
+
+	&.accordion--open {
+		border-color: $green;
+
+		.accordion__content {
+			max-height: 500px;
+		}
+	}
+
+	.accordion--toggle {
+		cursor: pointer;
+	}
+}

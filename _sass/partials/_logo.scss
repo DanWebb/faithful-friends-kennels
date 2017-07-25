@@ -1,0 +1,28 @@
+.logo {
+  &.six.columns {
+    width: 100%;
+  }
+}
+
+.logo__link {
+  display: block;
+  line-height: 0;
+}
+
+.logo__image {
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+}
+
+@include breakpoint(m) {
+  .logo {
+    &.six.columns {
+      width: 48%;
+    }
+  }
+
+  .logo__image {
+    margin: 0;
+  }
+}

@@ -1,0 +1,45 @@
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="six columns logo">
+                <a href="{{ site.baseurl }}/" class="logo__link">
+                    <img
+                        src="assets/images/logo.png"
+                        alt="Faithful Friends Kennels"
+                        class="logo__image"
+                    />
+                </a>
+            </div>
+
+            <nav class="six columns nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="{{ site.baseurl }}/the-kennels" class="nav__link">
+                            The Kennels
+                        </a>
+                    </li>
+
+                    <li class="nav__list-item">
+                        <a href="{{ site.baseurl }}/book" class="button button--primary">
+                            Book Now
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <div class="container">
+            <a href="mailto:{{ site.email }}" class="top-bar__info">
+                <i class="fa fa-envelope"></i> {{ site.email }}
+            </a>
+            <a href="tel:{{ site.phone }}" class="top-bar__info">
+                <i class="fa fa-phone"></i> {{ site.phone }}
+            </a>
+            <div class="top-bar__info">
+                <i class="fa fa-home"></i> {{ site.short_address }}
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% include banner.html %}
+
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="columns eight">
+				<h2>Book a Kennel</h2>
+				{% include booking-form.html %}
+			</div>
+
+			<div class="columns four sidebar">
+				<h3>Prices</h3>
+				{% include prices.html %}
+
+				<h3>For General Enquiries...</h3>
+				<a href="mailto:{{ site.email }}">
+						<i class="fa fa-envelope"></i> {{ site.email }}
+				</a> <br />
+				<a href="tel:{{ site.phone }}">
+						<i class="fa fa-mobile"></i> {{ site.phone }}
+				</a> <br />
+				<a href="tel:{{ site.telephone }}">
+						<i class="fa fa-phone"></i> {{ site.telephone }}
+				</a>
+
+				{% include opening-times.html %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="container">
+		<h2>FAQ</h2>
+		<hr />
+		{% for faq in site.faqs %}
+		<div class="row">
+			<div class="columns eight">
+					<h3>{{ faq.title }}</h3>
+					{{ faq.content }}
+			</div>
+
+			{% if faq.image %}
+				<div class="columns four">
+					{% if faq.image_link %}
+						<a href="{{faq.image_link}}">
+							<img src="{{ faq.image }}" />
+						</a>
+					{% else %}
+						<img src="{{ faq.image }}" />
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</div>

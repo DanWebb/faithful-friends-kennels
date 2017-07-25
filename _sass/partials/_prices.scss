@@ -1,0 +1,51 @@
+.prices {
+	.prices__price {
+		@include clearfix;
+	}
+
+	.prices__per,
+	.prices__amount {
+		float: left;
+	}
+
+	.prices__amount {
+		width: 70px;
+	}
+
+	.prices__per {
+		padding-top: 7px;
+		width: calc(100% - 70px);
+
+		span {
+			display: block;
+			line-height: 16px;
+			font-size: 12px;
+		}
+
+		span:last-child {
+			color: $black;
+			font-weight: 500;
+		}
+	}
+
+	.prices__amount {
+		color: $green;
+		font-weight: 100;
+		font-size: 30px;
+	}
+
+	.prices__per span {
+		display: block;
+	}
+
+	.small {
+		line-height: 16px;
+		font-size: 12px;
+		margin-top: 5px;
+
+		strong {
+			color: $black;
+			font-size: 11px;
+		}
+	}
+}

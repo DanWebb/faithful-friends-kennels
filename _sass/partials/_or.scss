@@ -1,0 +1,11 @@
+.or {
+  display: inline-block;
+  font-weight: $font-m;
+  margin: 0 5px;
+}
+
+@include breakpoint(s) {
+  .or {
+    margin: 0 10px;
+  }
+}
