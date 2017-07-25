@@ -6,7 +6,7 @@ short_address: Braunton, EX33 2NQ
 description: >
   Faithful Frinds Kennels is a family run, licensed dog boarding kennels located in North
   Devon with over 30 years of experience caring for dogs of all different breeds and ages.
-baseurl: "/faithful-friends-kennels" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://faithfulfriendskennels.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 socials:
   facebook: https://www.facebook.com/faithfulfriendskennels/
