@@ -29,14 +29,14 @@
     }
   }
 
-	&.banner--medium {
-		background-position: center;
-		height: calc(87vh - 198px);
+  &.banner--medium {
+    background-position: center;
+    height: calc(95vh - 198px);
 
-		&::after {
-			opacity: .5;
-		}
-	}
+    &::after {
+      opacity: .5;
+    }
+  }
 }
 
 .banner__content-container {
