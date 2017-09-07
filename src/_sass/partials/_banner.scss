@@ -32,7 +32,6 @@
 	&.banner--medium {
 		background-position: center;
 		height: calc(95vh - 198px);
-		min-height: 480px;
 
 		&::after {
 			opacity: .5;
@@ -120,6 +119,10 @@
     &.banner--small {
       height: 250px;
     }
+
+		&.banner--medium {
+			min-height: 480px;
+		}
   }
 
   .banner__content {
