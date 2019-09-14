@@ -4,7 +4,7 @@
   "private": true,
   "author": "Dan Webb",
   "scripts": {
-    "serve": "concurrently \"webpack --watch\" \"cd src && bundle exec jekyll serve\""
+    "serve": "concurrently \"webpack --watch\" \"bundle exec jekyll serve\""
   },
   "dependencies": {
     "jquery": "3.2.1",

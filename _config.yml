@@ -28,14 +28,14 @@ prices:
   extra: £10
 
 # Build settings
-exclude:
-  - node_modules
-  - webpack.config.js
-  - package.json
-  - package-lock.json
 markdown: kramdown
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - webpack.config.js
+  - package.json
+  - package-lock.json
+  - scripts
