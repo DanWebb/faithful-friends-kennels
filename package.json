@@ -7,7 +7,7 @@
     "serve": "concurrently \"webpack --watch\" \"bundle exec jekyll serve\""
   },
   "dependencies": {
-    "jquery": "3.2.1",
+    "jquery": "3.5.0",
     "owl.carousel": "2.2.0",
     "pikaday": "1.6.1"
   },
