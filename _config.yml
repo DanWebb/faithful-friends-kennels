@@ -23,8 +23,8 @@ opening_times:
     morning: 10am - 12:00pm
 
 prices:
-  one_dog: £18
-  two_dog: £27
+  one_dog: £20
+  two_dog: £30
   extra: £10
 
 # Build settings
